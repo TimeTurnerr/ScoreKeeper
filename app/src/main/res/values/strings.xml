@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FootBall Score Keeper</string>
+    <string name="reset">Reset</string>
+    <string name="teamA">Team A</string>
+    <string name="teamB">Team B</string>
+    <string name="score">0</string>
+    <string name="goal">GOAl</string>
+    <string name="freekick">free kick</string>
+    <string name="redcard">red card</string>
+    <string name="yellowcard">yellow card</string>
+    <string name="outside">outside</string>
+
+
+</resources>
