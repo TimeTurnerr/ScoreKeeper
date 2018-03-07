@@ -4,16 +4,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/football">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/reset"
-        android:layout_marginBottom="32dp"
-        android:id="@+id/we"
-        android:onClick="reset"/>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,7 +12,8 @@
         android:text=" Goal = 1 Point \n Red Score = Foul \n Free Kick = 1 Point \n Green Score = Points"
         android:layout_marginLeft="5dp"
         android:textColor="#ffffff"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:id="@+id/textView" />
 
 
     <TextView
@@ -101,7 +92,8 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:text="@string/goal"
-                android:onClick="goal"/>
+                android:id="@+id/goalA"
+                android:onClick="onClick"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -110,7 +102,8 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:text="@string/freekick"
-                android:onClick="freeKick"/>
+                android:id="@+id/freeKickA"
+                android:onClick="onClick"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -118,7 +111,8 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:text="@string/redcard"
-                android:onClick="redCard"/>
+                android:id="@+id/redCardA"
+                android:onClick="onClick"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -126,7 +120,8 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:text="@string/yellowcard"
-                android:onClick="yellowCard"/>
+                android:id="@+id/yellowCardA"
+                android:onClick="onClick"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -134,7 +129,8 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:text="@string/outside"
-                android:onClick="outSide"/>
+                android:id="@+id/outSideA"
+                android:onClick="onClick"/>
         </LinearLayout>
         <View
             android:layout_width="1dp"
@@ -197,7 +193,8 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:text="@string/goal"
-                android:onClick="goalb"/>
+                android:id="@+id/goalB"
+                android:onClick="onClick"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -206,7 +203,8 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:text="@string/freekick"
-                android:onClick="freeKickb"/>
+                android:id="@+id/freeKickB"
+                android:onClick="onClick"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -214,7 +212,8 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:text="@string/redcard"
-                android:onClick="redCardb"/>
+                android:id="@+id/redCardB"
+                android:onClick="onClick"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -222,7 +221,8 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:text="@string/yellowcard"
-                android:onClick="yellowCardb"/>
+                android:id="@+id/yellowCardB"
+                android:onClick="onClick"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -230,9 +230,20 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:text="@string/outside"
-                android:onClick="outSideb"/>
+                android:id="@+id/outSideB"
+                android:onClick="onClick"/>
 
             </LinearLayout>
         </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:id="@+id/reset"
+        android:onClick="onClick"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
 
