@@ -9,6 +9,8 @@
     <string name="redcard">red card</string>
     <string name="yellowcard">yellow card</string>
     <string name="outside">outside</string>
-
-
+    <string name="foul">foul</string>
+    <string name="scr">score</string>
+    <string name="info2">Goal = 1 Point \nRed Score = Foul \nFree Kick = 1 Point \nGreen Score = Points</string>
+    <string name="info1">Outside = 1 Foul \nRed Card = 2 Foul \nYellow Card = 1 Foul</string>
 </resources>

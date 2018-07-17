@@ -1,17 +1,13 @@
 package com.example.desmond.courtcounter;
-
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
 public class MainActivity extends AppCompatActivity {
     int scoreTeamA = 0;
     int scoreTeamA2 = 0;
     int scoreTeamB = 0;
     int scoreTeamB2 = 0;
-
     TextView team_a_score;
     TextView team_a_score2;
     TextView team_b_score;
@@ -22,22 +18,18 @@ public class MainActivity extends AppCompatActivity {
     public void displayForTeamA(int score) {
         team_a_score.setText(String.valueOf(score));
     }
-
     public void displayForTeamA2(int score) {
         team_a_score2.setText(String.valueOf(score));
     }
-
     /**
      * Displays the given score for Team B.
      */
     public void displayForTeamB(int score) {
         team_b_score.setText(String.valueOf(score));
     }
-
     public void displayForTeamB2(int score) {
         team_b_score2.setText(String.valueOf(score));
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA2(0);
         displayForTeamB2(0);
     }
-
     public void onClick(View v) {
         switch(v.getId())
         {
